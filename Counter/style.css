@@ -1,0 +1,19 @@
+body{
+    background-color : burlywood;
+    align-items: center;
+    text-align: center;
+}
+
+.Button {
+    background-color: aliceblue;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+#CountNum {
+    font-size: 2.5em;
+}
+
+.Button:hover{
+    background-color: bisque;
+}
