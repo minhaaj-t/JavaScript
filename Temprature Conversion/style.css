@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: beige;
+}
+
+form{
+    background-color: aliceblue;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.30);
+    max-width: 350px;
+    margin: auto;
+}
+
+#textBox{
+    
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25;
+    margin-bottom: 20px;
+}
+
+#button{
+    margin-top: 20px;
+    background-color: blue;
+    color: aliceblue;
+    border-color: rgb(93, 180, 255);
+    padding: 9px 15px;
+}
+
+#button:hover{
+    background-color: rgb(74, 74, 255);
+}

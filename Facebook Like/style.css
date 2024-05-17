@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #e9eaed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field-reactions:checked:focus ~ .text-desc,
+.field-reactions,
+[class*=reaction-],
+.text-desc {
+    clip: react(1px,1px,1px,1px);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.field-reactions:checked ~ [class*=reaction-],
+.box:hover [class*=reaction-],
+.field-reactions:focus ~
+.text-desc {
+    clip: auto;
+    overflow: visible;
+    opacity: 1;
+}
+
+.main-title {
+    background: #3a5795;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.text-desc{
+    font-weight: normal;
+    text-align: center;
+    transform: translateX(-50px);
+    white-space: nowrap;
+    font-size: 13px;
+    width: 100%;
+}
+
+[class*=reaction-] {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    z-index: 11;
+    top: -10px;
+    transform-origin: 50% 100%;
+    transform: scale(0.1);
+    transition: all 0.3s;
+    outline: none;
+    will-change: transform;
+    opacity: 0;
+}
+
+.box {
+    position: absolute;
+    left: calc(50% - 150%);
+    top: calc(50% - 50%);
+    width: 300px;
+}
