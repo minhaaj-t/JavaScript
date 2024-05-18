@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+        <h4>Hello Dice</h4>
+        <label for=""># of dice</label>
+        <input type="number" id="numberInput" value="1" min="1" max="6">
+        <button onclick="RollDice()">Roll now!</button>
+        <div id="DiceResult"></div>
+        <div id="DiceImage"></div>
+    </div>
+ <script src="script.js"></script>   
 </body>
 </html>
