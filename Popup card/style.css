@@ -1,0 +1,73 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #f8e1ef;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #333;
+  width: 500px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.blurer {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.dialog-window {
+  z-index: 10;
+  width: 350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  text-align: left;
+}
+
+.dialog-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
